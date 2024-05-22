@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+span{
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* .blueShadow{
+  box-shadow: 3px 3px 0 0 #60a5fa;
+}
+.blueShadow:hover{
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 #60a5fa;
+} */
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(66, 153, 225, 0.5);
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+.glow-button:hover::before {
+  opacity: 1;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px rgba(66, 153, 225, 0.5);
+}
