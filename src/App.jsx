@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from './assets/Components/Hero'
-import Generator from './assets/Components/Generator'
-import Workout from './assets/Components/Workout'
+import Hero from './Components/Hero'
+import Generator from './Components/Generator'
+import Workout from './Components/Workout'
 
 function App() {
   return (
