@@ -137,13 +137,12 @@ export default function Generator(props) {
         description={"Select your ultimate objective."}
       />
 
-      <div className="grid grid-cols-3  gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
           return (
             <button
               onClick={() => setGoal(scheme)}
-              className={
-                "bg-slate-950 border border-blue-400 py-4 rounded-lg flex flex-col items-center duration-200 hover:border-blue-400 glow-button" +
+              className={"bg-slate-950 border border-blue-400 py-4 rounded-lg flex flex-col items-center duration-200 hover:border-blue-400 glow-button" +
                 (scheme === goal ? " border-blue-600 " : " border-blue-400 ")
               }
               key={schemeIndex}
