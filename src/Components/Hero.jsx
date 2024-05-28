@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function Hero() {
   return (
     <div className="min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto p-4">
@@ -16,9 +18,7 @@ export default function Hero() {
         <span className="text-blue-400 font-medium">mass montrosity</span>,
         afflicted with severe body dismorphia, unable to fit through doors.
       </p>
-      <button className="glow-button px-8 py-4 rounded-md border-2 border-blue-400 duration-200">
-        <p>Accept & Begin</p>
-      </button>
+      <Button text={"Accept & Begin"}></Button>
     </div>
   );
 }
